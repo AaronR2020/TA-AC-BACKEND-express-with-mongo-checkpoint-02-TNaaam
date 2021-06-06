@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='../stylesheets/style.css' />
+</head>
+<body>
+    <!--specific info about the page-->
+    <nav class="flex-nav">
+        <h1 class="nav-text">Event</h1>
+        <a href="/event/eventForm" class="btn success">Add Event</a>
+      </nav>
+      <section>
+          <div class="info">
+              <p>Title: <%= article.title %></p>
+              <p>summary: <%= article.summary %></p>
+              <p>host: <%= article.host %></p>
+              <div class="flex">
+                <p><%= article.start_date %></p>/<p><%= article.end_date %></p>
+              </div>            
+              <div>
+              <p>location: <%= article.location %></p>
+              <p>likes: <%= article.likes %></p>
+              </div>
+              <p>timestamps: <%= article.timestamps %></p><br><br>
+              <div class="flex">
+                  <a href="/event/<%= article.title %>/edit" class="btn blue e">edit</a>
+                  <a href="/event/<%= article.title %>/delete" class="btn error e">delete</a>
+              </div>
+          </div>
+      </section>
+      <section >
+          <h3 class="title-comments">Comments</h3>
+          <hr>
+          <!--add comment-->
+         <div class="comment-form">
+            <form action="/event/<%= article.id %>/comment" method="post">
+                <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="submit">
+            </form>
+         </div>
+            <!--display Comment-->
+           <div class="display_comments">
+            <%articles.forEach(article=>{%>
+                article.comments.forEach(comment=>{%>
+            <p class="comment_display"><%= comment.text %></p>
+            <p class="comment_display"><%= comment.text %></p>
+            <% }%>
+            <% }%>
+           </div>
+      </section>
+</body>
+</html>
