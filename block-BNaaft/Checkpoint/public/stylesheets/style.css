@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+nav{
+  background-color: rgb(194, 194, 194);
+  padding: 20px;
+}
+.flex{
+  display: flex;
+}
+.event_form{
+margin: 20px auto;
+display: flex;
+flex-direction: column;
+}
+input,input:focus{
+  display: block;
+  margin: 10px auto;
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px ;
+  border-color: navajowhite;
+  border: none;
+}
+.center{
+  text-align: center;
+}
+.flex-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.flex-card{
+  display: flex;
+  justify-content: space-between;
+}
+.last-card{
+  width: 95%;
+  margin:auto;
+}
+.flex-card{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  background-color: greenyellow;
+  height: 20px;
+  padding: 7px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.card{
+  border: 1px solid none;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 20px;
+  background-color: rgb(250, 225, 215);
+}
+.cardVAl{
+  text-align: left;
+}
+.summary{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.nav-text{
+  font-size: 24px;
+  color: rgb(42, 71, 97);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.cardVAl{
+  text-transform: uppercase;
+}
+.info{
+  margin: 30px;
+}
+.info p{margin-top: 30px;}
+
+hr {
+    max-width: 70%;
+    margin: 0px;
+    margin-left: 20px;
+}
+.comment-form input{
+  margin-left: 20px;
+}
+.title-comments{
+  margin: 20px;
+}
+.e{
+  margin-right: 10px;
+  padding: 10px;
+  width: 55px;
+  text-align: center;
+}
+.blue{
+  background-color: rgb(159, 159, 243);
+}
+.error{
+  background-color: rgb(238, 115, 115);
+}
+.display_comments{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.comment_display{
+  margin-top: 20px;
+  background-color: rgb(201, 250, 242);
+  padding: 10px;
+}
+textarea{
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 60px;
+  width: 70%;
+}
+input[type=submit]{
+  border: 2px solid black;
+  cursor:pointer;
+}
