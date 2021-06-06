@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Index</title>
+    <link rel='stylesheet' href='./stylesheets/style.css' />
+  </head>
+  <body>
+    <nav class="flex-nav">
+      <h1 class="nav-text">Event</h1>
+      <a href="/event/eventForm" class="btn success">Add Event</a>
+    </nav>
+    <section>
+      <div class="center">
+        <!--List Events  cand>onCLick go to specific page-->
+            <%articles.forEach(article=>{%>
+               <div class="card" onclick="location.href = '/event/<%=article.id%>/eventInfo'">
+                    <h2 class="cardVAl"><%= article.title %></h2>
+                    <p class="cardVAl summary"><%= article.summary %></p>
+                  <div class="last-card">
+                    <div class="flex-card">
+                      <p class="cardVAl"><%= article.startDate %> / <%= article.endDate %></p>
+                      <p class="cardVAl"><%= article.location %></p>
+                    </div>
+              </div>
+            <%})%>
+      </div>
+    </section>
+  </body>
+</html>
